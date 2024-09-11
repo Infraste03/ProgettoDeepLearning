@@ -1,11 +1,10 @@
-1. CGAN (Conditional GAN)
-Nella cartella CGAN troverai i file necessari per eseguire la CGAN.
+Nella seguente repository sono presenti:
+-CGAN (Conditional GAN) 
+Nella cartella CGAN è possibile trovare i file necessari per eseguire la CGAN.
 
 Esecuzione
-Per avviare l'addestramento o il test, utilizza il comando seguente:
+Per avviare l'addestramento o il test, si può utilizzare  il comando seguente:
 
-bash
-Copia codice
 python ./GANBCE.py [train | test]
 Descrizione dei file
 Dataloader (StarGan): per la gestione del caricamento dei dati.
@@ -16,10 +15,9 @@ Discriminatore: implementazione del modello discriminatore.
 
 Test: modulo per eseguire i test.
 
-CLASSIFICATION_AND_ADV.py: script che combina l'adversarial loss con la classification loss. Per eseguire:
+CLASSIFICATION_AND_ADV.py: script che combina l'adversarial loss con la classification loss. 
+Per eseguire:
 
-bash
-Copia codice
 python ./CLASSIFICATION_AND_ADV.py [train | test]
 2. WGAN (Wasserstein GAN)
 Nella cartella WGAN sono inclusi i file per eseguire le versioni della WGAN con clipping dei pesi e gradient penalty.
