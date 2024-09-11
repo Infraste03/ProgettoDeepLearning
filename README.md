@@ -44,4 +44,6 @@ Nella seguente repository sono presenti:
   Discriminatore: implementazione del modello discriminatore.
   Test: modulo per eseguire i test.
 - Pesi
+
+
     La cartella Pesi contiene alcuni dei pesi ottenuti durante il training dei modelli.
