@@ -1,20 +1,44 @@
-Nella seguente Repository sono presenti le seguenti cartelle:
-1) CGAN
-2) WGAN
-3) Pesi
-   
-#1 CGAN
-All interno della cartella è possibile visionare i file necessari per poter eseguire la CGAN tramite il segunete comando : 
+1. CGAN (Conditional GAN)
+Nella cartella CGAN troverai i file necessari per eseguire la CGAN.
+
+Esecuzione
+Per avviare l'addestramento o il test, utilizza il comando seguente:
+
+bash
+Copia codice
 python ./GANBCE.py [train | test]
-In tale file sono importati i file del Dataloader(StarGan) ,Generatore, Discriminatore, Test e il file CLASSIFICATION_AND_ADV.py nel quale viene combinata l' adversarial loss con la classification loss
-./CLASSIFICATION_AND_ADV.py [train | test]
+Descrizione dei file
+Dataloader (StarGan): per la gestione del caricamento dei dati.
 
-#WGAN
+Generatore: implementazione del modello generatore.
 
-All interno della cartella è possibile visionare i file necessari per poter eseguire la WGAN tramite i seguneti comandi : 
-python ./WGANClipping.py [train | test] per eseguire il file nel quale è implementato il codice con il clipping dei pesi
-python ./WGANGradient.py [train | test] per eseguire il file nel quale è implemtata la gradient penalty
-In tale file sono importati i file del Dataloader(StarGan) ,Generatore, Discriminatore, Test
+Discriminatore: implementazione del modello discriminatore.
 
-#Pesi
-sono riportati alcuni dei pesi derivanti dal training 
+Test: modulo per eseguire i test.
+
+CLASSIFICATION_AND_ADV.py: script che combina l'adversarial loss con la classification loss. Per eseguire:
+
+bash
+Copia codice
+python ./CLASSIFICATION_AND_ADV.py [train | test]
+2. WGAN (Wasserstein GAN)
+Nella cartella WGAN sono inclusi i file per eseguire le versioni della WGAN con clipping dei pesi e gradient penalty.
+
+Esecuzione
+Per eseguire la WGAN con clipping dei pesi, utilizza il comando:
+
+bash
+Copia codice
+python ./WGANClipping.py [train | test]
+Per eseguire la WGAN con gradient penalty, utilizza il comando:
+
+bash
+Copia codice
+python ./WGANGradient.py [train | test]
+Descrizione dei file
+Dataloader (StarGan): per la gestione del caricamento dei dati.
+Generatore: implementazione del modello generatore.
+Discriminatore: implementazione del modello discriminatore.
+Test: modulo per eseguire i test.
+3. Pesi
+La cartella Pesi contiene alcuni dei pesi ottenuti durante il training dei modelli.
