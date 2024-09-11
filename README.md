@@ -1,6 +1,3 @@
-Ecco il README unificato e migliorato, che include sia la descrizione della repository che i dettagli del progetto:
-
----
 
 # Deep Learning and Generative Models  
 **Project Assignment #10**
@@ -10,26 +7,23 @@ L'obiettivo del progetto è creare una **cGAN** in grado di generare immagini ch
 
 ### Dataset  
 - **CelebA dataset**: contiene immagini di volti umani con annotazioni degli attributi (es. colore dei capelli, presenza di occhiali, ecc.).
-  - Puoi scaricare il dataset e le relative annotazioni da [CelebA Dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
-  - In alternativa, puoi usare lo script `download.sh` dalla repository [StarGAN](https://github.com/yunjey/stargan).
+  - È scaricare il dataset e le relative annotazioni da [CelebA Dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+  - In alternativa, si può usare lo script `download.sh` dalla repository [StarGAN](https://github.com/yunjey/stargan).
 
 ### Network Model  
 - **Conditional GAN (cGAN)**: usato per generare immagini appartenenti a specifiche classi.
   - Esperimenti suggeriti: combinare **adversarial loss** con **Wasserstein loss**.
   
 ### Dettagli Implementativi  
-- Il **dataloader** deve restituire un'immagine e le sue corrispondenti etichette di attributo (puoi utilizzare il **StarGAN Dataloader** come punto di partenza da [qui](https://github.com/yunjey/stargan)).
-- Puoi combinare la **adversarial loss** con una **classification loss** per migliorare i risultati (opzionale).
+- Il **dataloader** deve restituire un'immagine e le sue corrispondenti etichette di attributo (si può utilizzare il **StarGAN Dataloader** come punto di partenza da [qui](https://github.com/yunjey/stargan)).
+- Si può combinare la **adversarial loss** con una **classification loss** per migliorare i risultati (opzionale).
 - È possibile decidere a priori il numero di attributi su cui addestrare il modello. Ad esempio, puoi selezionare 5 attributi e sperimentare su quelli.
-
-### Note Aggiuntive  
-- Sperimenta con diversi attributi e loss functions per ottimizzare le prestazioni del modello.
 
 ---
 
 ## Repository Structure
 
-Questa repository contiene implementazioni di modelli GAN, inclusi **CGAN** e **WGAN**, con i relativi pesi.
+Questa repository contiene implementazioni di modelli GAN, inclusi **CGAN** e **WGAN**, con alcuni dei pesi ottenuti durante il training.
 
 ### Contenuto delle cartelle:
 1. **CGAN**
@@ -43,7 +37,7 @@ Questa repository contiene implementazioni di modelli GAN, inclusi **CGAN** e **
 Nella cartella `CGAN` sono presenti i file necessari per eseguire la CGAN.
 
 ### Esecuzione:
-Per avviare l'addestramento o il test, utilizza il seguente comando:
+Per avviare l'addestramento o il test, è possibile utlizzare il seguente comando:
 
 ```bash
 python ./GANBCE.py [train | test]
@@ -54,7 +48,8 @@ python ./GANBCE.py [train | test]
 - **Generatore**: implementazione del modello generatore.
 - **Discriminatore**: implementazione del modello discriminatore.
 - **Test**: modulo per eseguire i test.
-- **CLASSIFICATION_AND_ADV.py**: script che combina l'adversarial loss con la classification loss. Per eseguire:
+- **CLASSIFICATION_AND_ADV.py**: script che combina l'adversarial loss con la classification loss.
+- Per eseguire:
 
 ```bash
 python ./CLASSIFICATION_AND_ADV.py [train | test]
@@ -67,13 +62,13 @@ python ./CLASSIFICATION_AND_ADV.py [train | test]
 Nella cartella `WGAN` sono inclusi i file per eseguire le versioni della WGAN con **clipping dei pesi** e **gradient penalty**.
 
 ### Esecuzione:
-- Per eseguire la WGAN con **clipping dei pesi**, utilizza il comando:
+- Per eseguire la WGAN con **clipping dei pesi**, è possibile utlizzare il comando:
 
   ```bash
   python ./WGANClipping.py [train | test]
   ```
 
-- Per eseguire la WGAN con **gradient penalty**, utilizza il comando:
+- Per eseguire la WGAN con **gradient penalty**, è possibile utlizzare il comando:
 
   ```bash
   python ./WGANGradient.py [train | test]
@@ -91,6 +86,4 @@ Nella cartella `WGAN` sono inclusi i file per eseguire le versioni della WGAN co
 
 La cartella `Pesi` contiene alcuni dei pesi ottenuti durante il training dei modelli.
 
----
 
-Questo README fornisce una guida completa sia per il progetto che per l'utilizzo della repository.
