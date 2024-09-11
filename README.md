@@ -9,6 +9,7 @@ Nella seguente repository sono presenti:
   
   python ./GANBCE.py [train | test]
   Descrizione dei file
+  #
   Dataloader (StarGan): per la gestione del caricamento dei dati.
   
   Generatore: implementazione del modello generatore.
@@ -21,7 +22,8 @@ Nella seguente repository sono presenti:
   Per eseguire:
   
   python ./CLASSIFICATION_AND_ADV.py [train | test]
-2. WGAN (Wasserstein GAN)
+  
+- WGAN (Wasserstein GAN)
 Nella cartella WGAN sono inclusi i file per eseguire le versioni della WGAN con clipping dei pesi e gradient penalty.
 
 Esecuzione
