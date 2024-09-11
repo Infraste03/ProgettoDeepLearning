@@ -4,6 +4,7 @@ Nella seguente repository sono presenti:
   Nella cartella CGAN è possibile trovare i file necessari per eseguire la CGAN.
   
   Esecuzione
+  #
   Per avviare l'addestramento o il test, si può utilizzare  il comando seguente:
   
   python ./GANBCE.py [train | test]
