@@ -62,8 +62,8 @@ if __name__ == '__main__':
     # perform training or testing, and then parses the command-line arguments provided when running
     # the script. If the 'operation' argument is 'train', it will execute the code block under that
     # condition.
-    parser = argparse.ArgumentParser(description="Script per addestrare e testare il modello")
-    parser.add_argument('operation', choices=['train', 'test'], help="Specifica se eseguire il training o il testing")
+    parser = argparse.ArgumentParser(description="TRAIN OR TEST?")
+    parser.add_argument('operation', choices=['train', 'test'], help="TRAIN OR TEST?")
     args = parser.parse_args()
 
     if args.operation == 'train':
