@@ -86,4 +86,8 @@ Nella cartella `WGAN` sono inclusi i file per eseguire le versioni della WGAN co
 
 La cartella `Pesi` contiene alcuni dei pesi ottenuti durante il training dei modelli.
 
+## Esempio immagini generate
+![image](https://github.com/user-attachments/assets/95824ad6-f059-43bf-be50-103fa9e2c304)
+
+
 
