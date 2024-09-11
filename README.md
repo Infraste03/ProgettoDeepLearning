@@ -43,5 +43,5 @@ Nella seguente repository sono presenti:
   Generatore: implementazione del modello generatore.
   Discriminatore: implementazione del modello discriminatore.
   Test: modulo per eseguire i test.
-3. Pesi
-La cartella Pesi contiene alcuni dei pesi ottenuti durante il training dei modelli.
+- Pesi
+    La cartella Pesi contiene alcuni dei pesi ottenuti durante il training dei modelli.
