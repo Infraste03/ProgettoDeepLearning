@@ -1,6 +1,6 @@
 Nella seguente repository sono presenti:
-- CGAN
--CGAN (Conditional GAN) 
+- CGAN (Conditional GAN) 
+
 Nella cartella CGAN è possibile trovare i file necessari per eseguire la CGAN.
 
 Esecuzione
